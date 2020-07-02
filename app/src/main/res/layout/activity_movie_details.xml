@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_image_height"
+            android:id="@+id/movie_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/recipe_title_text_size"
+            android:textColor="#000"
+            android:id="@+id/movie_title"
+            android:padding="7dp"
+            android:layout_below="@+id/movie_image"
+            android:text="Title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/recipe_title_text_size"
+            android:textColor="#000"
+            android:id="@+id/year"
+            android:padding="7dp"
+            android:layout_below="@+id/movie_title"
+            android:text="Year"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/year"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view1"
+            android:id="@+id/container"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:textStyle="bold"
+                android:id="@+id/ingredients_title"
+                android:text="Categories"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/runtime"
+                android:gravity="center"
+                android:text="runtime"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_black_24dp"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/rating_icon"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="7.2"
+                android:textSize="@dimen/recipe_publisher_text_size" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:text="Synopsis"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/synopsisTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synopsisTitle"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:text="details"
+            android:paddingLeft="10dp"
+            android:id="@+id/synopsisText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synopsisText"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:text="Score"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/scoreTitle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreTitle"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:text="7.2"
+            android:paddingLeft="10dp"
+            android:id="@+id/scoreText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synopsisText"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Reviews"
+            android:padding="10dp"
+            android:id="@+id/reviewTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreTitle"
+            android:textSize="@dimen/recipe_publisher_text_size"
+            android:text="154"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/reviewText"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/reviewText"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/view2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/directorTitle"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:text="Director: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/directorTitle"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:id="@+id/directorName"
+                android:text="Director Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/directorName"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:id="@+id/writerTitle"
+                android:text="Writer:     "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/writerTitle"
+                android:layout_below="@id/directorName"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/writerName"
+                android:text="Writer Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writerName"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:id="@+id/actorTitle"
+                android:text="Actor:      "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/actorTitle"
+                android:layout_below="@id/writerName"
+                android:textSize="@dimen/recipe_publisher_text_size"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/actorName"
+                android:text="Actor Name"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
